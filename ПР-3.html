@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Списки в HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .element-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .element-list li {
+            display: inline-block;
+            background-color: lightblue;
+            padding: 5px 15px;
+            margin-right: 10px;
+            border-radius: 15px;
+        }
+        dt {
+            color: blue;
+            font-weight: bold;
+        }
+        dd {
+            margin-left: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ненумерований список</h2>
+    <ul class="element-list">
+        <li>Елемент 1</li>
+        <li>Елемент 2</li>
+        <li>Елемент 3</li>
+    </ul>
+
+    <h2>Нумерований список</h2>
+    <ol>
+        <li>Перший елемент</li>
+        <li>Другий елемент</li>
+        <li>Третій елемент</li>
+    </ol>
+
+    <h2>Багаторівневий список</h2>
+    <ol type="I">
+        <li>Перша категорія
+            <ol type="a">
+                <li>Підкатегорія a</li>
+                <li>Підкатегорія b</li>
+            </ol>
+        </li>
+        <li>Друга категорія</li>
+    </ol>
+
+    <h2>Список термінів</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Мова розмітки веб-сторінок</dd>
+        <dt>CSS</dt>
+        <dd>Мова стилів для веб-сторінок</dd>
+    </dl>
+</body>
+</html>
